@@ -42,3 +42,26 @@ foreach($personas as $persona){
         
      }
 }
+
+echo('_______________________________________________________ <br>');
+//Array multidimencional
+$alimentos=array(
+    "frutas"=>array('tropical'=>'kiwi','citrico'=>'naranja','accidos'=>'limon','dulce'=>'mango'),
+    "caroos"=>array('campero'=>'toyota','ferrary'=>'wemon','deportivo'=>'wilis','camioneta'=>'chebrolect'),
+    "carne"=>array('pollo'=>'pechuga','buey'=>'pierna','pescado'=>'aleta','vaca'=>'caveza'),
+
+);
+//imprimir un datos sin array
+echo($alimentos['carne']['pollo']);
+print_r($alimentos);
+echo('<br>');
+
+echo('_______________________________________________________ <br>');
+echo('<br>');
+
+foreach ($alimentos as $clave => $valor) {
+    echo($clave.'<br>');
+    foreach ($valor as $key => $val) {
+        echo('<br>'.$val);
+    }
+}
